@@ -1,0 +1,18 @@
+import java.io.IOException;
+
+import org.junit.Test;
+
+public class gameController {
+	@Test
+	public void gamePlayer() throws IOException {
+		Guessinggame G=new Guessinggame();
+		int lowscore=999999999;
+		do {
+			int MyGuesses=G.findthesecretnumber();
+			if(MyGuesses<lowscore) {
+				System.out.println("You got a new best score!");
+				lowscore=MyGuesses;
+			}}
+		while(true);
+	}
+}
